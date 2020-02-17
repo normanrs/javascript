@@ -1,7 +1,7 @@
 import { twoFer } from './two-fer'
-// import pry from 'pryjs'
+import pry from 'pryjs'
 
-// eval(pry.it)
+eval(pry.it)
 describe('twoFer()', () => {
   test('no name given', () => {
     expect(twoFer()).toEqual("One for you, one for me.")
@@ -11,7 +11,7 @@ describe('twoFer()', () => {
     expect(twoFer("Alice")).toEqual("One for Alice, one for me.")
   })
 
-  xtest('another name given', () => {
+  test('another name given', () => {
     expect(twoFer("Bob")).toEqual("One for Bob, one for me.")
   })
 })
