@@ -22,5 +22,16 @@ describe('test exercises', () => {
         expect(result);
     });
 
+    test('tournamentWinner does the thing', () => {
+        const competitions = [
+            ['HTML', 'C#'],
+            ['C#', 'Python'],
+            ['Python', 'HTML']
+        ]
+        const results = [0,0,1]
+        const result = ex.tournamentWinner(competitions, results)
+        expect(result).toEqual('Python');
+    });
+
 });
 
